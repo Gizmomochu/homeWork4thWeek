@@ -1,0 +1,22 @@
+/*sylowanie przycisków*/
+.button {
+    background-color: #656FB5;
+    color: #faffee;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.button--Active {
+    background-color: #7B9E65;
+    color: #faffee;
+}
+
+.dark .button {
+    background-color: #faffee;
+    color: #656FB5;
+}
+
+.dark .button--Active {
+    background-color: #7B9E65;
+    color: #faffee;
+}

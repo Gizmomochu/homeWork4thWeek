@@ -1,0 +1,26 @@
+/*stylowanie linku*/
+
+.section__webPage {
+    text-decoration: none;
+    color: #656FB5;
+}
+
+.dark .section__webPage {
+    color: #faffee;
+}
+
+.section__webPage:hover {
+    text-decoration: none;
+    background-color: #7B9E65;
+    color: #faffee;
+}
+
+.section__webPage:active {
+    text-decoration: none;
+    background-color: #af5858;
+    color: #faffee;
+}
+
+.section__container {
+    overflow-x: auto;
+}

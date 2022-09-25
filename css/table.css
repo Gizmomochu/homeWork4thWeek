@@ -1,0 +1,39 @@
+/*stylowanie tabeli*/
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.dark .table {
+    background-color: #faffee;
+    color: #7B9E65;
+}
+
+.dark .table .caption {
+    color: #faffee;
+}
+
+.tableHeader {
+    background-color: #656FB5;
+    color: #faffee;
+}
+
+.tableCell {
+    border: black solid 2px;
+}
+
+.tableRow:hover {
+    background-color: hsl(78, 100%, 80%);
+    color: #656FB5;
+}
+
+.dark .table .tableHeader {
+    background-color: #7B9E65;
+    color: #faffee;
+}
+
+.dark .table tr.tableRow:hover {
+    background-color: hsl(78, 100%, 80%);
+    color: #656FB5;
+}
+

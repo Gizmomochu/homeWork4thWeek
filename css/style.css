@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.imageChris {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.hide {
+    display: none;
+}
+
+/*ukryta wiadomość*/
+.riddle1--hide, .riddle2--hide, .riddle3--hide, .riddle4--hide, .riddle5--hide {
+    display: none;
+}
+
+/*stylowanie ogółu strony z podziałem na DZIEŃ/NOC*/
+.body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #faffee;
+    color: #656FB5;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1000px;
+}
+
+.dark {
+    background-color: #656FB5;
+    color: #faffee;
+}
+
+
+
+/*używane kolory:
+#7B9E65
+#faffee
+#656FB5*/

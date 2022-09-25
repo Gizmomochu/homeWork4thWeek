@@ -1,0 +1,19 @@
+.footer {
+    border-top: 1px black solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #656FB5;
+    color: #faffee;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dark .footer {
+    border-top: 1px black solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #faffee;
+    color: #656FB5;
+    text-align: center;
+    margin-top: 20px;
+}
