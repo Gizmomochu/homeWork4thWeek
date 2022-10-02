@@ -3,13 +3,13 @@ const welcome = () => {
 }
 
 const init = () => {
+    const buttonImage = document.querySelector(".js-buttonImage");
+    buttonImage.addEventListener("click", hideImage);
     welcome();
 }
 
 
 /*wszystkie chwytane elementy*/
-let buttonImage = document.querySelector(".js-buttonImage");
-let imageChris = document.querySelector(".js-imageChris");
 let buttonColor = document.querySelector(".js-buttonColor");
 let riddleButton1 = document.querySelector(".js-riddleButton1");
 let riddleButton2 = document.querySelector(".js-riddleButton2");
@@ -30,25 +30,26 @@ let award = document.querySelector(".js-award");
 /*zmiana koloru tła i przycisków*/
 buttonColor.addEventListener("click", () => {
     body.classList.toggle("dark");
-    
+
     if (body.classList.contains("dark")) {
         buttonColor.innerText = "Dzień";
-    } 
+    }
     else {
         buttonColor.innerText = "Noc";
     }
 });
 
-/*ukrywanie i pokazywanie zdjęcia*/
-buttonImage.addEventListener("click", () => {
+const hideImage = () => {
+    const buttonImage = document.querySelector(".js-buttonImage");
+    const imageChris = document.querySelector(".js-imageChris");
+
     imageChris.classList.toggle("hide");
-    if (imageChris.classList.contains("hide")) {
-        buttonImage.innerText = "Pokaż";
-    }
-    else {
-        buttonImage.innerText = "Ukryj";
-    }
-});
+    buttonImage.innerText = imageChris.classList.contains("hide") ? "Pokaż" : "Ukryj";
+}
+
+
+/*ukrywanie i pokazywanie zdjęcia*/
+
 
 /*ukrywanie i pokazywanie rozdziałów oraz ukryta wiadomość*/
 riddleButton1.addEventListener("click", () => {
