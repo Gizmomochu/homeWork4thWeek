@@ -1,4 +1,10 @@
-console.log("Witam wszystkich w mojej kolejnej pracy. Dzięki za wszystkie komentarze. PS. Na samym dole mała łamigłówka. :)")
+const welcome = () => {
+    console.log("Witam wszystkich w mojej kolejnej pracy. Dzięki za wszystkie komentarze. PS. Na samym dole mała łamigłówka. :)");
+}
+
+const init = () => {
+    welcome();
+}
 
 
 /*wszystkie chwytane elementy*/
@@ -80,3 +86,4 @@ riddleButton5.addEventListener("click", () => {
     console.log("Dobrze kombinujesz :)");
 });
 
+init();
