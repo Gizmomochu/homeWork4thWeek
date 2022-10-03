@@ -2,15 +2,6 @@ const welcome = () => {
     console.log("Witam wszystkich w mojej kolejnej pracy. Dzięki za wszystkie komentarze. PS. Na samym dole mała łamigłówka. :)");
 }
 
-const init = () => {
-    const buttonImage = document.querySelector(".js-buttonImage");
-    buttonImage.addEventListener("click", hideImage);
-    welcome();
-}
-
-
-/*wszystkie chwytane elementy*/
-let buttonColor = document.querySelector(".js-buttonColor");
 let riddleButton1 = document.querySelector(".js-riddleButton1");
 let riddleButton2 = document.querySelector(".js-riddleButton2");
 let riddleButton3 = document.querySelector(".js-riddleButton3");
@@ -22,22 +13,17 @@ let section2 = document.querySelector(".js-section2");
 let section3 = document.querySelector(".js-section3");
 let section4 = document.querySelector(".js-section4");
 let section5 = document.querySelector(".js-section5");
-let body = document.querySelector(".body");
 let award = document.querySelector(".js-award");
 
 
 
-/*zmiana koloru tła i przycisków*/
-buttonColor.addEventListener("click", () => {
-    body.classList.toggle("dark");
+const changeTheme = () => {
+    const body = document.querySelector(".body");
+    const buttonColor = document.querySelector(".js-buttonColor");
 
-    if (body.classList.contains("dark")) {
-        buttonColor.innerText = "Dzień";
-    }
-    else {
-        buttonColor.innerText = "Noc";
-    }
-});
+    body.classList.toggle("dark");
+    buttonColor.innerText = body.classList.contains("dark") ? "Jasny motyw" : "Ciemny motyw";
+}
 
 const hideImage = () => {
     const buttonImage = document.querySelector(".js-buttonImage");
@@ -46,10 +32,6 @@ const hideImage = () => {
     imageChris.classList.toggle("hide");
     buttonImage.innerText = imageChris.classList.contains("hide") ? "Pokaż" : "Ukryj";
 }
-
-
-/*ukrywanie i pokazywanie zdjęcia*/
-
 
 /*ukrywanie i pokazywanie rozdziałów oraz ukryta wiadomość*/
 riddleButton1.addEventListener("click", () => {
@@ -86,5 +68,13 @@ riddleButton5.addEventListener("click", () => {
     award.classList.toggle("riddle5--hide");
     console.log("Dobrze kombinujesz :)");
 });
+
+const init = () => {
+    const buttonImage = document.querySelector(".js-buttonImage");
+    const buttonColor = document.querySelector(".js-buttonColor");
+    buttonImage.addEventListener("click", hideImage);
+    buttonColor.addEventListener("click", changeTheme);
+    welcome();
+}
 
 init();
