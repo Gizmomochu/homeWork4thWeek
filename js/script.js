@@ -33,40 +33,47 @@ const hideImage = () => {
     buttonImage.innerText = imageChris.classList.contains("hide") ? "Pokaż" : "Ukryj";
 }
 
+const wrongButton = () => {
+    console.log("Niestety :(");
+}
+
+const goodButton = () => {
+    console.log("Dobrze kombinujesz :)");
+}
 /*ukrywanie i pokazywanie rozdziałów oraz ukryta wiadomość*/
 riddleButton1.addEventListener("click", () => {
     section1.classList.toggle("hide");
     riddleButton1.classList.toggle("button--Active");
     award.classList.toggle("riddle1--hide");
-    console.log("Dobrze kombinujesz :)");
+    goodButton();
 });
 
 riddleButton2.addEventListener("click", () => {
     section2.classList.toggle("hide");
     riddleButton2.classList.toggle("button--Active");
     award.classList.toggle("riddle2--hide");
-    console.log("Niestety :(");
+    wrongButton();
 });
 
 riddleButton3.addEventListener("click", () => {
     section3.classList.toggle("hide");
     riddleButton3.classList.toggle("button--Active");
     award.classList.toggle("riddle3--hide");
-    console.log("Niestety :(");
+    wrongButton();
 });
 
 riddleButton4.addEventListener("click", () => {
     section4.classList.toggle("hide");
     riddleButton4.classList.toggle("button--Active");
     award.classList.toggle("riddle4--hide");
-    console.log("Niestety :(");
+    wrongButton();
 });
 
 riddleButton5.addEventListener("click", () => {
     section5.classList.toggle("hide");
     riddleButton5.classList.toggle("button--Active");
     award.classList.toggle("riddle5--hide");
-    console.log("Dobrze kombinujesz :)");
+    goodButton();
 });
 
 const init = () => {
