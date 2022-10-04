@@ -1,6 +1,6 @@
 {
     const welcome = () => {
-        console.log("Witam wszystkich w mojej kolejnej pracy. Dzięki za wszystkie komentarze. PS. Na samym dole mała łamigłówka. :)");
+        console.log("Witam wszystkich w mojej kolejnej pracy. Dzięki za wszystkie komentarze. PS. Na samym dole mała łamigłówka. Dodatkowo zmodyfikowałem całego JS :)");
     }
 
     const changeTheme = () => {
