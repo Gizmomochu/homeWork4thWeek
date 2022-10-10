@@ -1,4 +1,4 @@
-# My simple currency calculator
+# My site for 4th week
 ## Demo
 ![DEMO](img/Animation.gif)
 https://gizmomochu.github.io/homeWork4thWeek/
